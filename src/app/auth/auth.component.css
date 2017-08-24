@@ -1,0 +1,18 @@
+.register-card {
+  width: 400px;
+}
+
+form md-input-container {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.button-row {
+  text-align: right;
+}
+
+.button-row > button {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+}

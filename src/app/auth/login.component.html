@@ -1,0 +1,35 @@
+<div class="login-page">
+    <md-card class="register-card">
+
+        <md-card-header>
+            <md-card-title>
+                <h3>Login</h3>
+            </md-card-title>
+        </md-card-header>
+
+        <md-card-content>
+
+            <form [formGroup]="form" (submit)="doSubmit()">
+
+                <md-input-container>
+                    <input type="email" mdInput formControlName="username" placeholder="Name" mdInput >
+                    <md-error *ngIf="formErrors.username[0]">
+                        {{formErrors.username[0]}}
+                    </md-error>
+                </md-input-container>
+
+                <md-input-container>
+                    <input type="password" mdInput formControlName="password" placeholder="Password" mdInput >
+                    <md-error *ngIf="formErrors.password[0]">
+                        {{formErrors.password[0]}}
+                    </md-error>
+                </md-input-container>
+                <div class="button-row">
+                    <button md-raised-button [disableRipple]="true" color="green" type="submit">Ok</button>
+                </div>
+            </form>
+
+        </md-card-content>
+
+    </md-card>
+</div>
