@@ -8,8 +8,7 @@ import 'rxjs/add/operator/catch';
 import {JwtService} from "./jwt.service";
 
 @Injectable()
-export class ApiService
-{
+export class ApiService {
     constructor (
         private http: Http,
         private jwtService: JwtService
